@@ -1,5 +1,6 @@
 import * as cheerio from 'cheerio';
 import { CourseGroup } from './course-group.type';
+import { formatCourseName } from '../shared/format-course-name';
 
 export class GroupsParser {
   public parseGroups(html: string): CourseGroup[] {
@@ -21,9 +22,9 @@ export class GroupsParser {
     );
 
     return {
-      code,
-      name,
-      group,
+      courseCode: code,
+      courseName: formatCourseName(name),
+      groupNumber: group,
     };
   }
 }

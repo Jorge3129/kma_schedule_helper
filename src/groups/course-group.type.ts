@@ -1,5 +1,5 @@
 export type CourseGroup = {
-  code: number;
-  name: string;
-  group: number;
+  courseCode: number;
+  courseName: string;
+  groupNumber: number;
 };
