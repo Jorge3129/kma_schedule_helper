@@ -9,10 +9,13 @@
   "author": "Heorhii Sanchenko",
   "license": "ISC",
   "dependencies": {
-    "cheerio": "^1.0.0-rc.12"
+    "cheerio": "^1.0.0-rc.12",
+    "lodash": "^4.17.21",
+    "xlsx": "^0.18.5"
   },
   "devDependencies": {
     "@types/cheerio": "^0.22.31",
+    "@types/lodash": "^4.14.197",
     "ts-node": "^10.9.1"
   }
 }
